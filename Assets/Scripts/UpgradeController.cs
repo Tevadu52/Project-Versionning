@@ -11,7 +11,7 @@ public class UpgradeController : MonoBehaviour
     private int amountOfMoney;
     public void SellAll()
     {
-        //amountOfMoney += PoissonStock.Instance.PoissonsTotalPrix();
+        //amountOfMoney += PoissonStock.Instance.PoissonsPrice();
         // PoissonStock.Instance.Clear();
         DisplayMoney();
     }
@@ -21,6 +21,7 @@ public class UpgradeController : MonoBehaviour
         //amountOfMoney -= price;
         //ligne pour augmenter le niveau de l'hameçon
         DisplayMoney();
+        updateButtons();
     }
 
     public void DisplayMoney()
@@ -30,5 +31,10 @@ public class UpgradeController : MonoBehaviour
 
     private void updateButtons()
     {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        // buttons[nomDuNiveauDeLaCanneAPeche + 1].interactable = true;
     }
 }
