@@ -30,12 +30,3 @@ public class PoissonsStock : MonoBehaviour
         Instance = this;
     }
 }
-
-[System.Serializable]
-public class Poisson
-{
-    public string Name;
-    public string Description;
-    public int Price;
-    public int Level;
-}
