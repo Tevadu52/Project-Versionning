@@ -11,14 +11,14 @@ public class UpgradeController : MonoBehaviour
     private int amountOfMoney;
     public void SellAll()
     {
-        //amountOfMoney += PoissonStock.Instance.PoissonsPrice();
-        // PoissonStock.Instance.Clear();
+        amountOfMoney += PoissonsStock.Instance.PoissonsPrice;
+        PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
     }
 
     public void Buy(int price)
     {
-        //amountOfMoney -= price;
+        amountOfMoney -= price;
         //ligne pour augmenter le niveau de l'hameçon
         DisplayMoney();
         updateButtons();
