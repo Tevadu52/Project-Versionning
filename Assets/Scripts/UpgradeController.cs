@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UpgradeController : MonoBehaviour
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private Text moneyDisplayer;
     [SerializeField] private List<Button> buttons;
 
@@ -41,5 +42,10 @@ public class UpgradeController : MonoBehaviour
             buttons[i].interactable = false;
         }
         // buttons[nomDuNiveauDeLaCanneAPeche + 1].interactable = true;
+    }
+
+    public void GoBack()
+    {
+        panel.SetActive(false);
     }
 }
