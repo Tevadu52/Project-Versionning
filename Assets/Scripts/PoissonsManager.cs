@@ -21,8 +21,22 @@ public class PoissonsManager : MonoBehaviour
         }
         Instance = this;
     }
+
+    private void Start()
+    {
+        Rect rect = new Rect(-Xmax -2.5f, Ymin +2.5f, Xmax * 2 + 5, -Ymin + 5);
+        CamMove.Instance.BoundsRect = rect;
+    }
+
     public Poisson GetPoisson(int index) { return Poissons[index]; }
     public Zone GetZone(int index) { return Zones[index]; }
+    public float Ymin
+    {
+        get 
+        {
+            return Zones[Zones.Length - 1].maxY;
+        }
+    }
     public int GetXmax() {return Xmax;}
 
     public void SpawnPoissons()
@@ -41,6 +55,13 @@ public class PoissonsManager : MonoBehaviour
             }
             id += 1;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Rect rect = new Rect(-Xmax, Ymin, Xmax * 2, -Ymin + 5);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(rect.center, rect.size);
     }
 }
 
