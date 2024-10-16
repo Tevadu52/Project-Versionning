@@ -7,8 +7,6 @@ public class PoissonsManager : MonoBehaviour
 {
     [SerializeField]
     private Poisson[] Poissons = new Poisson[0];
-    [SerializeField]
-    private GameObject PoissonsHolder;
 
     [SerializeField]
     private Zone[] Zones = new Zone[0];
@@ -30,7 +28,7 @@ public class PoissonsManager : MonoBehaviour
 
     public void SpawnPoissons()
     {
-        foreach (Transform currentPosition in PoissonsHolder.transform)
+        foreach (Transform currentPosition in transform)
         {
             Destroy(currentPosition.gameObject);
         }
@@ -39,7 +37,7 @@ public class PoissonsManager : MonoBehaviour
         {
             for (int i = 0; i < poisson.NumberByLevel; i++)
             {
-                GameObject poissonPrefab = Instantiate(poisson.Prefab);
+                GameObject poissonPrefab = Instantiate(poisson.Prefab, transform, true);
                 poissonPrefab.GetComponent<PoissonController>().Id = i;
             }
             id += 1;
