@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class UpgradeController : MonoBehaviour
 {
-    [SerializeField] private GameObject panel;
+    [Header("Panels")]
+    [SerializeField] private GameObject namePanel;
+    [SerializeField] private GameObject upgradePanel;
+    [Header("Textes")]
+    [SerializeField] private Text nameFish;
     [SerializeField] private Text moneyDisplayer;
     [SerializeField] private List<Button> buttons;
 
@@ -46,6 +50,20 @@ public class UpgradeController : MonoBehaviour
 
     public void GoBack()
     {
-        panel.SetActive(false);
+        upgradePanel.SetActive(false);
+    }
+
+    public void DisplayFishName(int id)
+    {
+        namePanel.SetActive(true);
+        nameFish.text = PoissonsManager.Instance.GetPoisson(id).Name;
+        StartCoroutine(WaitAndDisable());
+    }
+
+    private IEnumerator WaitAndDisable()
+    {
+        yield return new WaitForSeconds(1);
+        namePanel.SetActive(false);
+        StopAllCoroutines();
     }
 }
