@@ -18,6 +18,7 @@ public class UpgradeController : MonoBehaviour
     private void Start()
     {
         amountOfMoney = 0;
+        SetGameplay(false);
     }
     public void SellAll()
     {
@@ -61,9 +62,17 @@ public class UpgradeController : MonoBehaviour
         gameplayPanel.SetActive(false);
     }
 
-    public void HideGameplay(bool hidden)
+    public void SetGameplay(bool state)
     {
-        gameplayPanel.SetActive(hidden);
+        gameplayPanel.SetActive(state);
+    }
+    public bool GetGameplay()
+    {
+        return gameplayPanel.activeSelf;
+    }
+    public bool GetShop()
+    {
+        return upgradePanel.activeSelf;
     }
 
     public void DisplayFishName(int id)
@@ -74,7 +83,7 @@ public class UpgradeController : MonoBehaviour
 
     private IEnumerator WaitAndDisable()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         nameFish.text = "";
         StopAllCoroutines();
     }

@@ -584,8 +584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617b87b9c5ad35e4b9b37aa57131bd77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameplayPanel: {fileID: 0}
-  upgradePanel: {fileID: 1715775115151475187}
+  gameplayPanel: {fileID: 1715775115151475187}
+  upgradePanel: {fileID: 3936306506477005648}
   nameFish: {fileID: 3211656156474026151}
   moneyDisplayer: {fileID: 5769836852028750638}
   buttons:
@@ -791,7 +791,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8972259211142962681}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
+        m_MethodName: UpgradeHook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4816003623964918250
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +925,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
+        m_MethodName: UpgradeHook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
@@ -1376,7 +1400,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3271010951576076777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
+        m_MethodName: UpgradeHook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7395517764611955550
 GameObject:
   m_ObjectHideFlags: 0

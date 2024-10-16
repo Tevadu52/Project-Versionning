@@ -22,12 +22,14 @@ public class Hook : MonoBehaviour
 
     private void Update()
     {
-        if (rb.position.y  < .5f) upgradeController.HideGameplay(true);
-        else upgradeController.HideGameplay(false);
+        if (upgradeController.GetShop()) return;
+        if (rb.position.y  > -.5f && !upgradeController.GetGameplay()) upgradeController.SetGameplay(true);
+        else if(rb.position.y < -.5f && upgradeController.GetGameplay()) upgradeController.SetGameplay(false);
     }
 
     private void FixedUpdate()
     {
+        if (upgradeController.GetShop()) return;
         if (Mathf.Abs(_movementVector) > 0.1f)
         {
             Move();
