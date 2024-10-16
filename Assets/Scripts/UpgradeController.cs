@@ -9,6 +9,11 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private List<Button> buttons;
 
     private int amountOfMoney;
+
+    private void Start()
+    {
+        amountOfMoney = 0;
+    }
     public void SellAll()
     {
         amountOfMoney += PoissonsStock.Instance.PoissonsPrice;
