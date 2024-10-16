@@ -6,14 +6,24 @@ using UnityEngine.InputSystem;
 public class Hook : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
+    private int level = 0;
+    public int Level {  get { return level; } }
     private float _movementVector;
-
     private Rigidbody2D rb;
+
+    [SerializeField]
+    private UpgradeController upgradeController;
 
     // Start is called before the first frame update
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (rb.position.y  < .5f) upgradeController.HideGameplay(true);
+        else upgradeController.HideGameplay(false);
     }
 
     private void FixedUpdate()
@@ -24,6 +34,10 @@ public class Hook : MonoBehaviour
         }
     }
 
+    public void UpgradeHook()
+    {
+        level++;
+    }
 
     public void Move()
     {
