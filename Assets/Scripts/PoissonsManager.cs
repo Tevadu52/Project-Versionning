@@ -24,7 +24,7 @@ public class PoissonsManager : MonoBehaviour
 
     private void Start()
     {
-        Rect rect = new Rect(-Xmax -2.5f, Ymin +2.5f, Xmax * 2 + 5, -Ymin + 5);
+        Rect rect = new Rect(-Xmax, Ymin, Xmax * 2, -Ymin + 7.5f);
         CamMove.Instance.BoundsRect = rect;
     }
 
@@ -51,7 +51,7 @@ public class PoissonsManager : MonoBehaviour
             for (int i = 0; i < poisson.NumberByLevel; i++)
             {
                 GameObject poissonPrefab = Instantiate(poisson.Prefab, transform, true);
-                poissonPrefab.GetComponent<PoissonController>().Id = i;
+                poissonPrefab.GetComponent<PoissonController>().Id = id;
             }
             id += 1;
         }
@@ -59,8 +59,11 @@ public class PoissonsManager : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Rect rect = new Rect(-Xmax, Ymin, Xmax * 2, -Ymin + 5);
+        Rect rect = new Rect(-Xmax, Ymin, Xmax * 2, -Ymin + 7.5f);
         Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(rect.center, rect.size);
+        rect = new Rect(-Xmax, Ymin, Xmax * 2, -Ymin);
+        Gizmos.color = Color.green;
         Gizmos.DrawWireCube(rect.center, rect.size);
     }
 }

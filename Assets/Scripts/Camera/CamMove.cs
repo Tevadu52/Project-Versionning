@@ -7,6 +7,7 @@ public class CamMove : MonoBehaviour
 {
     private Camera cam;
     private Vector3 currentposition;
+    [SerializeField]
     private Vector3 offset = new Vector3(0, 0, -10);
 
     [SerializeField]private Transform target;
@@ -27,7 +28,7 @@ public class CamMove : MonoBehaviour
     private void Update()
     {
         currentposition = target.position;
-        setPosition(_ClampPositionIntoBounds(new Vector3(currentposition.x, currentposition.y, offset.z)));
+        setPosition(_ClampPositionIntoBounds(new Vector3(currentposition.x, currentposition.y, 0) + offset));
     }
 
     private Vector3 _ClampPositionIntoBounds(Vector3 position)

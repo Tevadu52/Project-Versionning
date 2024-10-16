@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6111558934252384509}
   - component: {fileID: 1436095542287303019}
+  - component: {fileID: 6482733540699912305}
   - component: {fileID: 2701582516001702710}
   - component: {fileID: 8572571692641265380}
   m_Layer: 0
   m_Name: Hook
-  m_TagString: Untagged
+  m_TagString: Hook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,8 +47,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2346b87b2f772e34287083e624dd67ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
   upgradeController: {fileID: 0}
+--- !u!58 &6482733540699912305
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211178090668491843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!50 &2701582516001702710
 Rigidbody2D:
   serializedVersion: 4
@@ -269,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb382f6a715bf34db61e9877fcae5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 4
 --- !u!50 &4522647111293379359
 Rigidbody2D:
   serializedVersion: 4
