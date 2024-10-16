@@ -22,7 +22,7 @@ public class PoissonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isAtDestination) getRandomDestination();
+        if(isAtDestination && isRoaming) getRandomDestination();
         if (!isAtDestination)
         {
             Vector2 targetVelocity = (destination - rb.position).normalized * PoissonsManager.Instance.GetPoisson(Id).Speed;
