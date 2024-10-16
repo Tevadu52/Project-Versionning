@@ -1,18 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Boat : MonoBehaviour
 {
+    [SerializeField] private float moveSpeed = 1f;
+    private float _movementVector;
+
+    private Rigidbody2D rb;
+
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        if (Mathf.Abs(_movementVector) > 0.1f)
+        {
+            Move();
+        }
+    }
+
+
+    public void Move()
+    {
+        if (Mathf.Abs(rb.position.x + _movementVector * moveSpeed * Time.fixedDeltaTime) < PoissonsManager.Instance.GetXmax())
+        {
+            rb.MovePosition(new Vector2(rb.position.x + _movementVector * moveSpeed * Time.fixedDeltaTime, rb.position.y));
+        }
+    }
+
+    public void OnMovement(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _movementVector = context.ReadValue<float>();
+        }
+        else if (context.canceled)
+        {
+            _movementVector = 0f;
+        }
     }
 }

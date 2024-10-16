@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PoissonsManager", order = 0)]
 public class PoissonsManager : MonoBehaviour
 {
     [SerializeField]
