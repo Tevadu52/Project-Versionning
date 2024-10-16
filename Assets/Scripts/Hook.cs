@@ -30,7 +30,7 @@ public class Hook : MonoBehaviour
     private void FixedUpdate()
     {
         if (upgradeController.GetShop()) return;
-        if (Mathf.Abs(_movementVector) > 0.1f)
+        if (_movementVector < 0.1f && _movementVector > PoissonsManager.Instance.Ymin)
         {
             Move();
         }
