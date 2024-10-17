@@ -587,6 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameplayPanel: {fileID: 1715775115151475187}
   upgradePanel: {fileID: 3936306506477005648}
+  FishCounter: {fileID: 1120131462433777289}
   nameFish: {fileID: 3211656156474026151}
   moneyDisplayer: {fileID: 5769836852028750638}
   buttons:

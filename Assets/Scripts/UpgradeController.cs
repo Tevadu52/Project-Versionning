@@ -9,11 +9,13 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private GameObject gameplayPanel;
     [SerializeField] private GameObject upgradePanel;
     [Header("Textes")]
+    [SerializeField] private Text FishCounter;
     [SerializeField] private Text nameFish;
     [SerializeField] private Text moneyDisplayer;
     [SerializeField] private List<Button> buttons;
 
     private int amountOfMoney;
+    private int amountOfFish;
 
     private void Start()
     {
@@ -79,6 +81,12 @@ public class UpgradeController : MonoBehaviour
     {
         nameFish.text =  "Vous avez attrapé un " + PoissonsManager.Instance.GetPoisson(id).Name + "!\n" + PoissonsManager.Instance.GetPoisson(id).Description;
         StartCoroutine(WaitAndSupress());
+    }
+
+    public void IncrementCounter()
+    {
+        amountOfFish++;
+        FishCounter.text = amountOfFish + "poissons pêchés";
     }
 
     private IEnumerator WaitAndSupress()
