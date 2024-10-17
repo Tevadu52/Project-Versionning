@@ -42,40 +42,18 @@ public class UpgradeController : MonoBehaviour
     {
         if (amountOfMoney - price >= 0)
         {
-            
             amountOfMoney -= price;
             DisplayMoney();
             updateButtons();
         }
     }
 
-    private void DisplayMoney()
-    {
-        moneyDisplayer.text = amountOfMoney.ToString() + "€";
-    }
-
-    private void updateButtons()
-    {
-        for (int i = 0; i < buttons.Count; i++)
-        {
-            buttons[i].interactable = false;
-        }
-        if (amountOfMoney >= firstPrice && hook.Level == 0)
-        {
-            buttons[0].interactable = true;
-        } else if (amountOfMoney >= secondPrice && hook.Level == 1)
-        {
-            buttons[1].interactable = true;
-        } else if (amountOfMoney >= thirdPrice && hook.Level == 2)
-        {
-            buttons[2].interactable = true;
-        }
-    }
 
     public void GoBack()
     {
-        upgradePanel.SetActive(false);
         PoissonsManager.Instance.SpawnPoissons();
+        StartCoroutine(WaitAndDisplay());
+        upgradePanel.SetActive(false);
         gameplayPanel.SetActive(true);
     }
 
@@ -109,11 +87,46 @@ public class UpgradeController : MonoBehaviour
         amountOfFish++;
         FishCounter.text = amountOfFish + " poissons pêchés";
     }
+    private void DisplayMoney()
+    {
+        moneyDisplayer.text =  "Argent :" + amountOfMoney.ToString() + "€";
+    }
+
+    private void updateButtons()
+    {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        if (amountOfMoney >= firstPrice && hook.Level == 0)
+        {
+            buttons[0].interactable = true;
+        } else if (amountOfMoney >= secondPrice && hook.Level == 1)
+        {
+            buttons[1].interactable = true;
+        } else if (amountOfMoney >= thirdPrice && hook.Level == 2)
+        {
+            buttons[2].interactable = true;
+        }
+    }
+
+    private void InitiateButtons()
+    {
+        buttons[0].GetComponentInChildren<Text>().text = "Hameçon de niveau 2 :" + firstPrice.ToString() + "€.";
+        buttons[1].GetComponentInChildren<Text>().text = "Hameçon de niveau 3 :" + secondPrice.ToString() + "€.";
+        buttons[2].GetComponentInChildren<Text>().text = "Hameçon de niveau 4 :" + thirdPrice.ToString() + "€.";
+    }
 
     private IEnumerator WaitAndSupress()
     {
         yield return new WaitForSeconds(1f);
         nameFish.text = "";
+        StopAllCoroutines();
+    }
+
+    private IEnumerator WaitAndDisplay()
+    {
+        yield return new WaitForSeconds(0.5f);
         StopAllCoroutines();
     }
 }
