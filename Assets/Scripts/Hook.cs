@@ -6,9 +6,11 @@ using UnityEngine.InputSystem;
 public class Hook : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
-    private int level = 0;
+    [SerializeField] private int level = 0;
     public GameObject asPoisson { get; set; }
     public int Level {  get { return level; } }
+    [SerializeField] private int bait = 0;
+    public int Bait { get { return bait; } set { bait = value; } }
     private float _movementVector;
     private Rigidbody2D rb;
 
@@ -31,6 +33,8 @@ public class Hook : MonoBehaviour
                 PoissonsStock.Instance.PoissonsAdd(asPoisson.GetComponent<PoissonController>().Id);
                 Destroy(asPoisson);
                 asPoisson = null;
+                Bait = 0;
+                upgradeController.IncrementCounter();
             }
             upgradeController.SetGameplay(true);
         }

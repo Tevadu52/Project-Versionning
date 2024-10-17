@@ -713,6 +713,10 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Zones.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Zones.Array.data[0].maxY
       value: -7
       objectReference: {fileID: 0}
@@ -731,6 +735,30 @@ PrefabInstance:
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Zones.Array.data[2].minY
       value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Zones.Array.data[3].maxY
+      value: -36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Zones.Array.data[3].minY
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].Level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].prob.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].prob.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].prob.Array.data[0]
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
