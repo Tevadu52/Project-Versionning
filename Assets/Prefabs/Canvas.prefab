@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 418864673657620457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1931670284525898053}
@@ -75,10 +75,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hame\xE7on de niveau 3"
+  m_Text: "Troisi\xE8me hame\xE7on : 90 \u20AC"
 --- !u!1 &1715775115151475187
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ RectTransform:
   m_GameObject: {fileID: 3245885143718783962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 46303945166027826}
@@ -465,10 +465,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hame\xE7on de niveau 2"
+  m_Text: "Deuxi\xE8me hame\xE7on : 50 \u20AC"
 --- !u!1 &3804155631005721828
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +594,10 @@ MonoBehaviour:
   - {fileID: 5117629515674771339}
   - {fileID: 4941053491744063221}
   - {fileID: 1972599786914134029}
+  hook: {fileID: 0}
+  firstPrice: 0
+  secondPrice: 0
+  thirdPrice: 0
 --- !u!1 &3936306506477005648
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +785,7 @@ RectTransform:
   m_GameObject: {fileID: 4552429501527233893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7564697609550775193}
@@ -874,14 +878,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
-        m_MethodName: UpgradeHook
-        m_Mode: 1
+      - m_Target: {fileID: 9161849448194719167}
+        m_TargetAssemblyTypeName: UpgradeController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1047,7 +1051,7 @@ RectTransform:
   m_GameObject: {fileID: 4816003623964918250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3793379378794528362}
@@ -1140,26 +1144,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
-        m_MethodName: UpgradeHook
-        m_Mode: 1
+      - m_Target: {fileID: 9161849448194719167}
+        m_TargetAssemblyTypeName: UpgradeController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1602,7 +1594,7 @@ RectTransform:
   m_GameObject: {fileID: 7013167506982742467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 684891053193477797}
@@ -1695,14 +1687,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Hook, Assembly-CSharp
-        m_MethodName: UpgradeHook
-        m_Mode: 1
+      - m_Target: {fileID: 9161849448194719167}
+        m_TargetAssemblyTypeName: UpgradeController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 90
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1813,8 +1805,8 @@ RectTransform:
   m_GameObject: {fileID: 8360017583156108181}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4436157704509305983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1861,10 +1853,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hame\xE7on de niveau 1\n"
+  m_Text: "Premier hame\xE7on : 20 \u20AC"
 --- !u!1 &8836413102789638651
 GameObject:
   m_ObjectHideFlags: 0

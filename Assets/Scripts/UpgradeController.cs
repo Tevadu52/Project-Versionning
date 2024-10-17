@@ -13,6 +13,12 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private Text nameFish;
     [SerializeField] private Text moneyDisplayer;
     [SerializeField] private List<Button> buttons;
+    [Header("Hook")]
+    [SerializeField] private Hook hook;
+    [Header("Prices")]
+    [SerializeField] private int firstPrice;
+    [SerializeField] private int secondPrice;
+    [SerializeField] private int thirdPrice;
 
     private int amountOfMoney;
     private int amountOfFish;
@@ -21,25 +27,31 @@ public class UpgradeController : MonoBehaviour
     {
         amountOfMoney = 0;
         SetGameplay(false);
+        DisplayMoney();
+        updateButtons();
     }
     public void SellAll()
     {
         amountOfMoney += PoissonsStock.Instance.PoissonsPrice;
         PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
+        amountOfFish = 0;
     }
 
     public void Buy(int price)
     {
-        amountOfMoney -= price;
-        //ligne pour augmenter le niveau de l'hameçon
-        DisplayMoney();
-        updateButtons();
+        if (amountOfMoney - price >= 0)
+        {
+            
+            amountOfMoney -= price;
+            DisplayMoney();
+            updateButtons();
+        }
     }
 
     private void DisplayMoney()
     {
-        moneyDisplayer.text = amountOfMoney.ToString();
+        moneyDisplayer.text = amountOfMoney.ToString() + "€";
     }
 
     private void updateButtons()
@@ -48,7 +60,16 @@ public class UpgradeController : MonoBehaviour
         {
             buttons[i].interactable = false;
         }
-        // buttons[nomDuNiveauDeLaCanneAPeche + 1].interactable = true;
+        if (amountOfMoney >= firstPrice && hook.Level == 0)
+        {
+            buttons[0].interactable = true;
+        } else if (amountOfMoney >= secondPrice && hook.Level == 1)
+        {
+            buttons[1].interactable = true;
+        } else if (amountOfMoney >= thirdPrice && hook.Level == 2)
+        {
+            buttons[2].interactable = true;
+        }
     }
 
     public void GoBack()
@@ -86,7 +107,7 @@ public class UpgradeController : MonoBehaviour
     public void IncrementCounter()
     {
         amountOfFish++;
-        FishCounter.text = amountOfFish + "poissons pêchés";
+        FishCounter.text = amountOfFish + " poissons pêchés";
     }
 
     private IEnumerator WaitAndSupress()
