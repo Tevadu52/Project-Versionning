@@ -77,11 +77,11 @@ public class UpgradeController : MonoBehaviour
 
     public void DisplayFishName(int id)
     {
-        nameFish.text = PoissonsManager.Instance.GetPoisson(id).Name;
-        StartCoroutine(WaitAndDisable());
+        nameFish.text =  "Vous avez attrapé un " + PoissonsManager.Instance.GetPoisson(id).Name + "!\n" + PoissonsManager.Instance.GetPoisson(id).Description;
+        StartCoroutine(WaitAndSupress());
     }
 
-    private IEnumerator WaitAndDisable()
+    private IEnumerator WaitAndSupress()
     {
         yield return new WaitForSeconds(1f);
         nameFish.text = "";
