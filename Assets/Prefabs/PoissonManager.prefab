@@ -44,6 +44,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96c4a139b479344ba12b9fce9f94886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Poissons: []
-  Zones: []
-  Xmax: 3
+  Poissons:
+  - Name: Poisson 1 Niveau 1
+    Description: 
+    Speed: 3
+    Price: 3
+    Level: 0
+    NumberByLevel: 2
+    Prefab: {fileID: 6310334941271636805, guid: 355a5d8fd4f4612438e02fc6870e531b, type: 3}
+  - Name: Poisson 2 Niveau 1
+    Description: 
+    Speed: 2
+    Price: 2
+    Level: 0
+    NumberByLevel: 3
+    Prefab: {fileID: 2172470400365335917, guid: 62f52d7500cddbb4483df8cd72af0185, type: 3}
+  - Name: Poisson 3 Niveau 1
+    Description: 
+    Speed: 1
+    Price: 1
+    Level: 1
+    NumberByLevel: 3
+    Prefab: {fileID: 7347075381126099028, guid: a0974c5ad9cc7cf4bb5dec0f26f331b0, type: 3}
+  - Name: Poisson 4 Niveau 1
+    Description: 
+    Speed: 4
+    Price: 4
+    Level: 0
+    NumberByLevel: 2
+    Prefab: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
+  - Name: Poisson 1 Niveau 2
+    Description: 
+    Speed: 4
+    Price: 7
+    Level: 1
+    NumberByLevel: 3
+    Prefab: {fileID: 1267181869056409525, guid: 1af26e1c84235ed448eaddb2f5f60e26, type: 3}
+  - Name: Poisson 2 Niveau 2
+    Description: 
+    Speed: 5
+    Price: 8
+    Level: 1
+    NumberByLevel: 4
+    Prefab: {fileID: 7384732624363604232, guid: 740a4ae02b522d742bdb207b0c16584a, type: 3}
+  - Name: Poisson 3 Niveau 2
+    Description: 
+    Speed: 3
+    Price: 9
+    Level: 1
+    NumberByLevel: 3
+    Prefab: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
+  - Name: Poisson 1 Niveau 3
+    Description: 
+    Speed: 3
+    Price: 12
+    Level: 2
+    NumberByLevel: 3
+    Prefab: {fileID: 6310334941271636805, guid: 355a5d8fd4f4612438e02fc6870e531b, type: 3}
+  - Name: Poisson 2 Niveau 3
+    Description: 
+    Speed: 4
+    Price: 13
+    Level: 2
+    NumberByLevel: 4
+    Prefab: {fileID: 7384732624363604232, guid: 740a4ae02b522d742bdb207b0c16584a, type: 3}
+  - Name: "M\xE9galodon"
+    Description: 
+    Speed: 2
+    Price: 150
+    Level: 2
+    NumberByLevel: 1
+    Prefab: {fileID: 1809872733354251460, guid: 49c95e6b8d2792b49aa4e3c1f4e681ed, type: 3}
+  Zones:
+  - minY: 0
+    maxY: -15
+  - minY: -10
+    maxY: -28
+  - minY: -25
+    maxY: -36.5
+  Xmax: 10

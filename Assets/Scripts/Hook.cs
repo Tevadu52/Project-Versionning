@@ -43,9 +43,10 @@ public class Hook : MonoBehaviour
 
     public void Move()
     {
-        if (rb.position.y + _movementVector * moveSpeed * Time.fixedDeltaTime < 0f)
+        float nextMove = rb.position.y + _movementVector * moveSpeed * Time.fixedDeltaTime;
+        if (nextMove < 0f && nextMove > PoissonsManager.Instance.Ymin)
         {
-            rb.MovePosition(new Vector2(transform.parent.position.x, rb.position.y + _movementVector * moveSpeed * Time.fixedDeltaTime));
+            rb.MovePosition(new Vector2(transform.parent.position.x, nextMove));
         }
     }
 
