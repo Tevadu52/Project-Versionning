@@ -25,11 +25,8 @@ public class PoissonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target !=  null)
-        {
-            destination = target.transform.position;
-        }
-        if (isAtDestination && target == null) destination = getRandomDestination();
+        if (target != null) return;
+        if (isAtDestination) destination = getRandomDestination();
         if (!isAtDestination)
         {
             Vector2 targetVelocity = (destination - rb.position).normalized * PoissonsManager.Instance.GetPoisson(Id).Speed;
@@ -73,7 +70,15 @@ public class PoissonController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Hook")) target = collision.gameObject;
+        if (collision.CompareTag("Hook") && !collision.GetComponent<Hook>().asPoisson && target == null)
+        {
+            collision.GetComponent<Hook>().asPoisson = gameObject;
+            target = collision.gameObject;
+            transform.SetParent(target.transform, false);
+            transform.localPosition = new Vector2(0, -DistanceToTouch);
+            transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
+            rb.velocity = Vector3.zero;
+        }
         if (collision.CompareTag("Shark")) Destroy(gameObject);
     }
 }

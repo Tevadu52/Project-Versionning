@@ -7,6 +7,7 @@ public class Hook : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
     private int level = 0;
+    public GameObject asPoisson { get; set; }
     public int Level {  get { return level; } }
     private float _movementVector;
     private Rigidbody2D rb;
@@ -23,8 +24,17 @@ public class Hook : MonoBehaviour
     private void Update()
     {
         if (upgradeController.GetShop()) return;
-        if (rb.position.y  > -.5f && !upgradeController.GetGameplay()) upgradeController.SetGameplay(true);
-        else if(rb.position.y < -.5f && upgradeController.GetGameplay()) upgradeController.SetGameplay(false);
+        if (rb.position.y > -.5f && !upgradeController.GetGameplay())
+        {
+            if (asPoisson != null)
+            {
+                PoissonsStock.Instance.PoissonsAdd(asPoisson.GetComponent<PoissonController>().Id);
+                Destroy(asPoisson);
+                asPoisson = null;
+            }
+            upgradeController.SetGameplay(true);
+        }
+        else if (rb.position.y < -.5f && upgradeController.GetGameplay()) upgradeController.SetGameplay(false);
     }
 
     private void FixedUpdate()

@@ -18,7 +18,7 @@ public class PoissonsStock : MonoBehaviour
         }
     }
     public void PoissonsClear() { poissons.Clear(); }
-    public void PoissonsAdd(Poisson poisson) { poissons.Add(poisson); }
+    public void PoissonsAdd(int Id) { poissons.Add(PoissonsManager.Instance.GetPoisson(Id)); }
     public static PoissonsStock Instance;
 
     private void Awake()
