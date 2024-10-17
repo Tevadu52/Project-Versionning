@@ -76,6 +76,7 @@ public class Poisson
     public float Speed;
     public int Price;
     public int Level;
+    public int[] prob = new int[4];
     public int NumberByLevel;
     public GameObject Prefab;
 }
