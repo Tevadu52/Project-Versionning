@@ -31,6 +31,7 @@ public class Hook : MonoBehaviour
             if (asPoisson != null)
             {
                 PoissonsStock.Instance.PoissonsAdd(asPoisson.GetComponent<PoissonController>().Id);
+                upgradeController.DisplayFishName(asPoisson.GetComponent<PoissonController>().Id);
                 Destroy(asPoisson);
                 asPoisson = null;
                 Bait = 0;

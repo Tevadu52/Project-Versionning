@@ -412,6 +412,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ec82967689a0e9e4fb26056930662654, type: 3}
+    - target: {fileID: 9161849448194719167, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
+      propertyPath: hook
+      value: 
+      objectReference: {fileID: 1436095540782382312}
+    - target: {fileID: 9161849448194719167, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
+      propertyPath: firstPrice
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161849448194719167, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
+      propertyPath: thirdPrice
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161849448194719167, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
+      propertyPath: secondPrice
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
