@@ -29,7 +29,7 @@ public class Hook : MonoBehaviour
     private void Update()
     {
         if (upgradeController.GetShop()) return;
-        Line.transform.localScale = new Vector3(1, Vector2.Distance(transform.position, Line.transform.position), 1);
+        Line.GetComponent<SpriteRenderer>().size = new Vector2(1, Vector2.Distance(transform.position, Line.transform.position));
         if (rb.position.y > -.5f && !upgradeController.GetGameplay())
         {
             if (asPoisson != null)
