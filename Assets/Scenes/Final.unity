@@ -745,6 +745,10 @@ PrefabInstance:
       value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Zones.Array.data[0].minY
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Zones.Array.data[1].maxY
       value: -25
       objectReference: {fileID: 0}
