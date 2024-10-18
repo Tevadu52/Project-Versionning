@@ -27,6 +27,7 @@ public class UpgradeController : MonoBehaviour
     {
         amountOfMoney = 0;
         SetGameplay(false);
+        InitiateButtons();
         DisplayMoney();
         updateButtons();
     }
