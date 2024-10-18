@@ -40,6 +40,7 @@ public class UpgradeController : MonoBehaviour
         PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
         amountOfFish = 0;
+        updateButtons();
     }
 
     public void Buy(int price)

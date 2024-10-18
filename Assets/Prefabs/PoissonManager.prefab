@@ -108,7 +108,7 @@ MonoBehaviour:
   - Name: Poisson exotique
     Description: C'est un oiseau ? C'est un avion ? C'est un poisson exotique !
     Speed: 4
-    Price: 4
+    Price: 5
     Level: 0
     prob:
     - 40
@@ -132,7 +132,7 @@ MonoBehaviour:
   - Name: Poisson Globe
     Description: On en aura pas fait le tour !
     Speed: 4
-    Price: 7
+    Price: 12
     Level: 1
     prob:
     - 20
@@ -144,7 +144,7 @@ MonoBehaviour:
   - Name: "Carpe Ko\xCF"
     Description: Je l'aime trop!!
     Speed: 5
-    Price: 8
+    Price: 14
     Level: 1
     prob:
     - 15
@@ -156,7 +156,7 @@ MonoBehaviour:
   - Name: Mini mahi-mahi
     Description: Un mahi-mahi mais en petit...
     Speed: 3
-    Price: 9
+    Price: 13
     Level: 1
     prob:
     - 10
@@ -168,7 +168,7 @@ MonoBehaviour:
   - Name: Baracuda
     Description: "A ne pas confondre avec le bar \xE0 Cuda"
     Speed: 3
-    Price: 12
+    Price: 17
     Level: 2
     prob:
     - 3
@@ -180,8 +180,8 @@ MonoBehaviour:
   - Name: Mahi-mahi
     Description: Il parle le taki taki!
     Speed: 6
-    Price: 15
-    Level: 3
+    Price: 20
+    Level: 2
     prob:
     - 5
     - 35
@@ -192,7 +192,7 @@ MonoBehaviour:
   - Name: Thon
     Description: Le ton est donner!
     Speed: 4
-    Price: 13
+    Price: 25
     Level: 2
     prob:
     - 1
