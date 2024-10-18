@@ -20,6 +20,8 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private int firstPrice;
     [SerializeField] private int secondPrice;
     [SerializeField] private int thirdPrice;
+    [Header("Variables")]
+    [SerializeField] private int timeToWait;
 
     private int amountOfMoney;
     private int amountOfFish;
@@ -93,7 +95,11 @@ public class UpgradeController : MonoBehaviour
 
     public void StartGame(GameObject canvas)
     {
+        PoissonsManager.Instance.SpawnPoissons();
+        StartCoroutine(WaitAndDisplay());
         canvas.SetActive(false);
+        upgradePanel.SetActive(false);
+        gameplayPanel.SetActive(true);
     }
 
     private void DisplayMoney()
@@ -128,7 +134,7 @@ public class UpgradeController : MonoBehaviour
 
     private IEnumerator WaitAndSupress()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(timeToWait);
         nameFish.text = "";
         StopAllCoroutines();
     }
