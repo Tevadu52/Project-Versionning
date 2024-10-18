@@ -1026,9 +1026,9 @@ MonoBehaviour:
   - {fileID: 4941053491744063221}
   - {fileID: 1972599786914134029}
   hook: {fileID: 0}
-  firstPrice: 0
-  secondPrice: 0
-  thirdPrice: 0
+  firstPrice: 20
+  secondPrice: 50
+  thirdPrice: 90
 --- !u!1 &3920494837446530054
 GameObject:
   m_ObjectHideFlags: 0
