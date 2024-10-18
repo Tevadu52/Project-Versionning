@@ -769,20 +769,276 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].Name
+      value: clown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].Name
+      value: Combattant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].Name
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].Name
+      value: exotiq
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].Name
+      value: Globe
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].Name
+      value: "Ko\xCF"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].Name
+      value: long
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].Name
+      value: baracuda
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].Name
+      value: thon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].Name
+      value: Doris
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[9].Level
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
-      propertyPath: Poissons.Array.data[0].prob.Array.data[0]
-      value: 100
+      propertyPath: Poissons.Array.data[2].Prefab
+      value: 
+      objectReference: {fileID: 6719425151339829902, guid: 5d59a6ac91f00f340befc37176ee84b1, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].Prefab
+      value: 
+      objectReference: {fileID: 7347075381126099028, guid: a0974c5ad9cc7cf4bb5dec0f26f331b0, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].Prefab
+      value: 
+      objectReference: {fileID: 6272041835147234703, guid: d03988341e69cd44d8d0e0bf1f4f20a1, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].Prefab
+      value: 
+      objectReference: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].Prefab
+      value: 
+      objectReference: {fileID: 6187773829537612551, guid: 073a3b4f76490c44da949110128860d2, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].Prefab
+      value: 
+      objectReference: {fileID: 7384732624363604232, guid: 740a4ae02b522d742bdb207b0c16584a, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].Prefab
+      value: 
+      objectReference: {fileID: 3841525010234192504, guid: 7985b6d3e6253e646b40c75ff40758f5, type: 3}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].Description
+      value: "Il vaut 3 pi\xE8ces"
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
-      propertyPath: Poissons.Array.data[1].prob.Array.data[0]
+      propertyPath: Poissons.Array.data[1].Description
+      value: "Il vaut 2 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].Description
+      value: "Il vaut 1 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].Description
+      value: "Il vaut 4 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].Description
+      value: "Il vaut 7 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].Description
+      value: "Il vaut 8 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].Description
+      value: "Il vaut 9 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].Description
+      value: "Il vaut 12 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].Description
+      value: "Il vaut 13 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].Description
+      value: "Il vaut 150 pi\xE8ces"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].prob.Array.data[0]
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].prob.Array.data[1]
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].prob.Array.data[2]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[0].prob.Array.data[3]
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].prob.Array.data[0]
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].prob.Array.data[1]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].prob.Array.data[2]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[1].prob.Array.data[3]
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].prob.Array.data[0]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].prob.Array.data[1]
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].prob.Array.data[2]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].prob.Array.data[3]
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].prob.Array.data[0]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].prob.Array.data[1]
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].prob.Array.data[2]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[3].prob.Array.data[3]
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[4].prob.Array.data[0]
-      value: 100
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].prob.Array.data[1]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].prob.Array.data[2]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[4].prob.Array.data[3]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].prob.Array.data[0]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].prob.Array.data[1]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].prob.Array.data[2]
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[5].prob.Array.data[3]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].prob.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].prob.Array.data[1]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].prob.Array.data[2]
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[6].prob.Array.data[3]
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].prob.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].prob.Array.data[1]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].prob.Array.data[2]
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[7].prob.Array.data[3]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].prob.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].prob.Array.data[1]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].prob.Array.data[2]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[8].prob.Array.data[3]
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].prob.Array.data[0]
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].prob.Array.data[1]
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].prob.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[9].prob.Array.data[3]
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
