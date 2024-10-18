@@ -93,7 +93,11 @@ public class UpgradeController : MonoBehaviour
 
     public void StartGame(GameObject canvas)
     {
+        PoissonsManager.Instance.SpawnPoissons();
+        StartCoroutine(WaitAndDisplay());
         canvas.SetActive(false);
+        upgradePanel.SetActive(false);
+        gameplayPanel.SetActive(true);
     }
 
     private void DisplayMoney()
