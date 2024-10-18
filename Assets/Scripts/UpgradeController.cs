@@ -121,9 +121,9 @@ public class UpgradeController : MonoBehaviour
 
     private void InitiateButtons()
     {
-        buttons[0].GetComponentInChildren<Text>().text = "Hameçon de niveau 2 :" + firstPrice.ToString() + "€.";
-        buttons[1].GetComponentInChildren<Text>().text = "Hameçon de niveau 3 :" + secondPrice.ToString() + "€.";
-        buttons[2].GetComponentInChildren<Text>().text = "Hameçon de niveau 4 :" + thirdPrice.ToString() + "€.";
+        buttons[0].GetComponentInChildren<TMP_Text>().text = "Hameçon de niveau 2 :" + firstPrice.ToString() + "€.";
+        buttons[1].GetComponentInChildren<TMP_Text>().text = "Hameçon de niveau 3 :" + secondPrice.ToString() + "€.";
+        buttons[2].GetComponentInChildren<TMP_Text>().text = "Hameçon de niveau 4 :" + thirdPrice.ToString() + "€.";
     }
 
     private IEnumerator WaitAndSupress()
