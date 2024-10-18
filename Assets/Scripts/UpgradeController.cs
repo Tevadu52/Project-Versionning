@@ -33,7 +33,7 @@ public class UpgradeController : MonoBehaviour
     }
     public void SellAll()
     {
-        amountOfMoney += PoissonsStock.Instance.PoissonsPrice;
+        amountOfMoney = Mathf.Min(amountOfMoney + PoissonsStock.Instance.PoissonsPrice, 999);
         PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
         amountOfFish = 0;
