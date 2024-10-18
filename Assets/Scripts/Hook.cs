@@ -29,8 +29,8 @@ public class Hook : MonoBehaviour
     private void Update()
     {
         if (upgradeController.GetShop()) return;
-        Line.GetComponent<SpriteRenderer>().size = new Vector2(1, Vector2.Distance(transform.position, Line.transform.position));
-        if (rb.position.y > -.5f && !upgradeController.GetGameplay())
+        Line.GetComponent<SpriteRenderer>().size = new Vector2(0.07f, Vector2.Distance(transform.position, Line.transform.position));
+        if (rb.position.y > .5f && !upgradeController.GetGameplay())
         {
             if (asPoisson != null)
             {
@@ -43,7 +43,7 @@ public class Hook : MonoBehaviour
             }
             upgradeController.SetGameplay(true);
         }
-        else if (rb.position.y < -.5f && upgradeController.GetGameplay()) upgradeController.SetGameplay(false);
+        else if (rb.position.y < .5f && upgradeController.GetGameplay()) upgradeController.SetGameplay(false);
     }
 
     private void FixedUpdate()
@@ -64,7 +64,7 @@ public class Hook : MonoBehaviour
     public void Move()
     {
         float nextMove = rb.position.y + _movementVector * moveSpeed * Time.fixedDeltaTime;
-        if (nextMove < 0f && nextMove > PoissonsManager.Instance.Ymin)
+        if (nextMove < 1.5f && nextMove > PoissonsManager.Instance.Ymin)
         {
             rb.MovePosition(new Vector2(transform.parent.position.x, nextMove));
         }
