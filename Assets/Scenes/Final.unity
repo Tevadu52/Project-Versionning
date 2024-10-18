@@ -782,39 +782,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[1].Name
-      value: clown
+      value: Poisson Clown
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[2].Name
-      value: doris
+      value: Doris
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[3].Name
-      value: Combattant
+      value: Poisson Combattant
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[4].Name
-      value: Blue
+      value: Poisson Blue
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[5].Name
-      value: exotiq
+      value: Poisson exotique
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[6].Name
-      value: Red
+      value: Poisson Red
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[7].Name
-      value: Globe
+      value: Poisson Globe
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[8].Name
-      value: "Ko\xCF"
+      value: "Carpe Ko\xCF"
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[9].Name
-      value: long
+      value: Mini mahi-mahi
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[0].Level
@@ -830,15 +830,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[10].Name
-      value: baracuda
+      value: Baracuda
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[11].Name
-      value: mahi-mahi
+      value: Mahi-mahi
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[12].Name
-      value: thon
+      value: Thon
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[13].Name
@@ -1058,27 +1058,27 @@ PrefabInstance:
       objectReference: {fileID: 1809872733354251460, guid: 49c95e6b8d2792b49aa4e3c1f4e681ed, type: 3}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[0].Description
-      value: "Il vaut 4 pi\xE8ces"
+      value: Il ne me manque plus qu'un pilier!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[1].Description
-      value: "Il vaut 3 pi\xE8ces"
+      value: Il rit a pleine branchie!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[2].Description
-      value: je suis qui?
+      value: Vous auriez pas vu mon pote ?
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[3].Description
-      value: "Il vaut 2 pi\xE8ces"
+      value: Il s'est bien defendu!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[4].Description
-      value: "Il vaut 1 pi\xE8ces"
+      value: Maintenant, j'ai le blues !!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[5].Description
-      value: "Il vaut 4 pi\xE8ces"
+      value: C'est un oiseau ? C'est un avion ? C'est un poisson exotique !
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[6].Description
@@ -1086,31 +1086,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[7].Description
-      value: C'est quoi ce poisson mdr!!!!
+      value: On en aura pas fait le tour !
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[8].Description
-      value: "Il vaut 8 pi\xE8ces"
+      value: Je l'aime trop!!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[9].Description
-      value: "Il vaut 9 pi\xE8ces"
+      value: Un mahi-mahi mais en petit...
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[10].Description
-      value: "Il vaut 12 pi\xE8ces"
+      value: "A ne pas confondre avec le bar \xE0 Cuda"
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[11].Description
-      value: "Il vaut 15  pi\xE8ces"
+      value: Il parle le taki taki!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[12].Description
-      value: "Il vaut 13 pi\xE8ces"
+      value: Le ton est donner!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[13].Description
-      value: "Il vaut 150 pi\xE8ces"
+      value: Le roi des mer, a ne pas confondre avec Luffy!
       objectReference: {fileID: 0}
     - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: Poissons.Array.data[0].NumberByLevel
