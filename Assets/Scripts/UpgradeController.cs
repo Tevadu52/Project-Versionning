@@ -33,7 +33,7 @@ public class UpgradeController : MonoBehaviour
     }
     public void SellAll()
     {
-        amountOfMoney += PoissonsStock.Instance.PoissonsPrice;
+        amountOfMoney = Mathf.Min(amountOfMoney + PoissonsStock.Instance.PoissonsPrice, 999);
         PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
         amountOfFish = 0;
@@ -88,6 +88,12 @@ public class UpgradeController : MonoBehaviour
         amountOfFish++;
         FishCounter.text = amountOfFish + " poissons pêchés";
     }
+
+    public void StartGame(GameObject canvas)
+    {
+        canvas.SetActive(false);
+    }
+
     private void DisplayMoney()
     {
         moneyDisplayer.text =  "Argent :" + amountOfMoney.ToString() + "€";
