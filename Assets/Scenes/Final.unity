@@ -452,46 +452,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 216802302471883238, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a105ca4f3c9548842b234be4cfb93bb9, type: 3}
-    - target: {fileID: 1150067348501373801, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_Size.x
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 1150067348501373801, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1150067348501373801, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0816f791017feb84a9fb1aaee4887fa2, type: 3}
-    - target: {fileID: 1150067348501373801, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_DrawMode
-      value: 2
+    - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
+      propertyPath: bait
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
       propertyPath: upgradeController
       value: 
       objectReference: {fileID: 789851099}
-    - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: hamecon.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: d15cfa5cab4a6ca468fbde5be5258ca4, type: 3}
-    - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: hamecon.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 415d1049a67ed37418c91d6b0645a14d, type: 3}
-    - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: hamecon.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 415d1049a67ed37418c91d6b0645a14d, type: 3}
-    - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: hamecon.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 0d46064cad452f14789a8291afe28501, type: 3}
     - target: {fileID: 3894238202830007623, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -532,33 +500,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4201029273762356427, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4201029273762356427, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4201029273762356427, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4201029273762356427, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5220507734609862977, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
-    - target: {fileID: 6111558934252384509, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6111558934252384509, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6
+    - target: {fileID: 8572571692641265380, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

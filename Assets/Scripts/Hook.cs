@@ -52,7 +52,9 @@ public class Hook : MonoBehaviour
         if (Mathf.Abs(_movementVector) > 0.1f)
         {
             Move();
+            transform.parent.GetComponent<Animator>().SetBool("mouline", true);
         }
+        else transform.parent.GetComponent<Animator>().SetBool("mouline", false);
     }
 
     public void UpgradeHook()
