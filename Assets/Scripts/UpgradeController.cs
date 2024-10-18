@@ -88,6 +88,12 @@ public class UpgradeController : MonoBehaviour
         amountOfFish++;
         FishCounter.text = amountOfFish + " poissons pêchés";
     }
+
+    public void StartGame(GameObject canvas)
+    {
+        canvas.SetActive(false);
+    }
+
     private void DisplayMoney()
     {
         moneyDisplayer.text =  "Argent :" + amountOfMoney.ToString() + "€";
