@@ -7,7 +7,9 @@ public class Hook : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private int level = 0;
+    [SerializeField] private Sprite[] hamecon;
     public GameObject asPoisson { get; set; }
+    [SerializeField] private GameObject Line;
     public int Level {  get { return level; } }
     [SerializeField] private int bait = 0;
     public int Bait { get { return bait; } set { bait = value; } }
@@ -21,11 +23,13 @@ public class Hook : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        GetComponent<SpriteRenderer>().sprite = hamecon[level];
     }
 
     private void Update()
     {
         if (upgradeController.GetShop()) return;
+        Line.transform.localScale = new Vector3(1, Vector2.Distance(transform.position, Line.transform.position), 1);
         if (rb.position.y > -.5f && !upgradeController.GetGameplay())
         {
             if (asPoisson != null)
@@ -54,6 +58,7 @@ public class Hook : MonoBehaviour
     public void UpgradeHook()
     {
         level++;
+        GetComponent<SpriteRenderer>().sprite = hamecon[level];
     }
 
     public void Move()
