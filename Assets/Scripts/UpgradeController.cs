@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,9 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private GameObject gameplayPanel;
     [SerializeField] private GameObject upgradePanel;
     [Header("Textes")]
-    [SerializeField] private Text FishCounter;
-    [SerializeField] private Text nameFish;
-    [SerializeField] private Text moneyDisplayer;
+    [SerializeField] private TMP_Text FishCounter;
+    [SerializeField] private TMP_Text nameFish;
+    [SerializeField] private TMP_Text moneyDisplayer;
     [SerializeField] private List<Button> buttons;
     [Header("Hook")]
     [SerializeField] private Hook hook;
@@ -46,6 +47,7 @@ public class UpgradeController : MonoBehaviour
             amountOfMoney -= price;
             DisplayMoney();
             updateButtons();
+            hook.UpgradeHook();
         }
     }
 
