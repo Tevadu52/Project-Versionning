@@ -15,6 +15,7 @@ public class Hook : MonoBehaviour
     public int Bait { get { return bait; } set { bait = value; } }
     private float _movementVector;
     private Rigidbody2D rb;
+    private Boat boat;
 
     [SerializeField]
     private UpgradeController upgradeController;
@@ -24,6 +25,7 @@ public class Hook : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         GetComponent<SpriteRenderer>().sprite = hamecon[level];
+        boat = transform.parent.GetComponent<Boat>();
     }
 
     private void Update()
@@ -66,9 +68,14 @@ public class Hook : MonoBehaviour
     public void Move()
     {
         float nextMove = rb.position.y + _movementVector * moveSpeed * Time.fixedDeltaTime;
+        float boatMove = rb.position.x + boat.MoveVector * boat.MoveSpeed * Time.fixedDeltaTime;
+        if (Mathf.Abs(boatMove) < PoissonsManager.Instance.GetXmax())
+        {
+            rb.position = new Vector2(boatMove, rb.position.y);
+        }
         if (nextMove < 1.5f && nextMove > PoissonsManager.Instance.Ymin)
         {
-            rb.MovePosition(new Vector2(transform.parent.position.x, nextMove));
+            rb.MovePosition(new Vector2(rb.position.x, nextMove));
         }
     }
 

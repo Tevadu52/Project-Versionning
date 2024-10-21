@@ -50,12 +50,12 @@ MonoBehaviour:
   moveSpeed: 3
   level: 0
   hamecon:
+  - {fileID: 21300000, guid: 2840bc70187ba0e4daa4889a27182a2e, type: 3}
   - {fileID: 21300000, guid: d15cfa5cab4a6ca468fbde5be5258ca4, type: 3}
-  - {fileID: 21300000, guid: 415d1049a67ed37418c91d6b0645a14d, type: 3}
   - {fileID: 21300000, guid: 415d1049a67ed37418c91d6b0645a14d, type: 3}
   - {fileID: 21300000, guid: 0d46064cad452f14789a8291afe28501, type: 3}
   Line: {fileID: 7261876823639810279}
-  bait: 2
+  bait: 0
   upgradeController: {fileID: 0}
 --- !u!58 &6482733540699912305
 CircleCollider2D:
@@ -115,7 +115,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -339,7 +339,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6

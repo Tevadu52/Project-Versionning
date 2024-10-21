@@ -45,81 +45,181 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Poissons:
-  - Name: Poisson 1 Niveau 1
-    Description: 
+  - Name: Bar
+    Description: Il ne me manque plus qu'un pilier!
+    Speed: 5
+    Price: 4
+    Level: 0
+    prob:
+    - 60
+    - 65
+    - 85
+    - 90
+    NumberByLevel: 1
+    Prefab: {fileID: 7671436073999646812, guid: 729721837bb3e874f94f920c3cb7e268, type: 3}
+  - Name: Poisson Clown
+    Description: Il rit a pleine branchie!
     Speed: 3
     Price: 3
     Level: 0
+    prob:
+    - 50
+    - 70
+    - 85
+    - 95
     NumberByLevel: 2
     Prefab: {fileID: 6310334941271636805, guid: 355a5d8fd4f4612438e02fc6870e531b, type: 3}
-  - Name: Poisson 2 Niveau 1
-    Description: 
+  - Name: Doris
+    Description: Vous auriez pas vu mon pote ?
+    Speed: 1
+    Price: 5
+    Level: 0
+    prob:
+    - 50
+    - 51
+    - 52
+    - 53
+    NumberByLevel: 1
+    Prefab: {fileID: 3284157779074676460, guid: b3899614f522e654696c1b8fd5b2993c, type: 3}
+  - Name: Poisson Combattant
+    Description: Il s'est bien defendu!
     Speed: 2
     Price: 2
     Level: 0
+    prob:
+    - 65
+    - 75
+    - 85
+    - 95
     NumberByLevel: 3
     Prefab: {fileID: 2172470400365335917, guid: 62f52d7500cddbb4483df8cd72af0185, type: 3}
-  - Name: Poisson 3 Niveau 1
-    Description: 
+  - Name: Poisson Blue
+    Description: Maintenant, j'ai le blues !!
     Speed: 1
     Price: 1
     Level: 1
+    prob:
+    - 75
+    - 80
+    - 85
+    - 95
     NumberByLevel: 3
-    Prefab: {fileID: 7347075381126099028, guid: a0974c5ad9cc7cf4bb5dec0f26f331b0, type: 3}
-  - Name: Poisson 4 Niveau 1
-    Description: 
+    Prefab: {fileID: 6719425151339829902, guid: 5d59a6ac91f00f340befc37176ee84b1, type: 3}
+  - Name: Poisson exotique
+    Description: C'est un oiseau ? C'est un avion ? C'est un poisson exotique !
     Speed: 4
-    Price: 4
+    Price: 5
     Level: 0
+    prob:
+    - 40
+    - 65
+    - 85
+    - 95
     NumberByLevel: 2
-    Prefab: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
-  - Name: Poisson 1 Niveau 2
-    Description: 
+    Prefab: {fileID: 7347075381126099028, guid: a0974c5ad9cc7cf4bb5dec0f26f331b0, type: 3}
+  - Name: Poisson Red
+    Description: Red dead redemption 2
+    Speed: 3
+    Price: 20
+    Level: 2
+    prob:
+    - 30
+    - 50
+    - 70
+    - 90
+    NumberByLevel: 1
+    Prefab: {fileID: 3558926466226397676, guid: 9e5add529138eb94097f7d60fbc070ba, type: 3}
+  - Name: Poisson Globe
+    Description: On en aura pas fait le tour !
     Speed: 4
-    Price: 7
-    Level: 1
-    NumberByLevel: 3
-    Prefab: {fileID: 1267181869056409525, guid: 1af26e1c84235ed448eaddb2f5f60e26, type: 3}
-  - Name: Poisson 2 Niveau 2
-    Description: 
-    Speed: 5
-    Price: 8
-    Level: 1
-    NumberByLevel: 4
-    Prefab: {fileID: 7384732624363604232, guid: 740a4ae02b522d742bdb207b0c16584a, type: 3}
-  - Name: Poisson 3 Niveau 2
-    Description: 
-    Speed: 3
-    Price: 9
-    Level: 1
-    NumberByLevel: 3
-    Prefab: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
-  - Name: Poisson 1 Niveau 3
-    Description: 
-    Speed: 3
     Price: 12
-    Level: 2
+    Level: 1
+    prob:
+    - 20
+    - 50
+    - 75
+    - 85
     NumberByLevel: 3
-    Prefab: {fileID: 6310334941271636805, guid: 355a5d8fd4f4612438e02fc6870e531b, type: 3}
-  - Name: Poisson 2 Niveau 3
-    Description: 
-    Speed: 4
-    Price: 13
-    Level: 2
+    Prefab: {fileID: 6272041835147234703, guid: d03988341e69cd44d8d0e0bf1f4f20a1, type: 3}
+  - Name: "Carpe Ko\xCF"
+    Description: Je l'aime trop!!
+    Speed: 5
+    Price: 14
+    Level: 1
+    prob:
+    - 15
+    - 40
+    - 70
+    - 85
     NumberByLevel: 4
+    Prefab: {fileID: 1643785279076068188, guid: d507d743d962be94ab5ad7e7bf085d3c, type: 3}
+  - Name: Mini mahi-mahi
+    Description: Un mahi-mahi mais en petit...
+    Speed: 3
+    Price: 13
+    Level: 1
+    prob:
+    - 10
+    - 35
+    - 65
+    - 85
+    NumberByLevel: 3
+    Prefab: {fileID: 6187773829537612551, guid: 073a3b4f76490c44da949110128860d2, type: 3}
+  - Name: Baracuda
+    Description: "A ne pas confondre avec le bar \xE0 Cuda"
+    Speed: 3
+    Price: 17
+    Level: 2
+    prob:
+    - 3
+    - 10
+    - 45
+    - 75
+    NumberByLevel: 3
     Prefab: {fileID: 7384732624363604232, guid: 740a4ae02b522d742bdb207b0c16584a, type: 3}
-  - Name: "M\xE9galodon"
-    Description: 
+  - Name: Mahi-mahi
+    Description: Il parle le taki taki!
+    Speed: 6
+    Price: 20
+    Level: 2
+    prob:
+    - 5
+    - 35
+    - 65
+    - 95
+    NumberByLevel: 2
+    Prefab: {fileID: 1267181869056409525, guid: 1af26e1c84235ed448eaddb2f5f60e26, type: 3}
+  - Name: Thon
+    Description: Le ton est donner!
+    Speed: 4
+    Price: 25
+    Level: 2
+    prob:
+    - 1
+    - 10
+    - 40
+    - 65
+    NumberByLevel: 4
+    Prefab: {fileID: 3841525010234192504, guid: 7985b6d3e6253e646b40c75ff40758f5, type: 3}
+  - Name: Michel
+    Description: "Le roi des mer, contrairement \xE0 Luffy!"
     Speed: 2
     Price: 150
-    Level: 2
+    Level: 3
+    prob:
+    - 0.01
+    - 0.1
+    - 5
+    - 15
     NumberByLevel: 1
     Prefab: {fileID: 1809872733354251460, guid: 49c95e6b8d2792b49aa4e3c1f4e681ed, type: 3}
   Zones:
-  - minY: 0
-    maxY: -15
-  - minY: -10
-    maxY: -28
+  - minY: -1
+    maxY: -7
+  - minY: -7
+    maxY: -25
   - minY: -25
-    maxY: -36.5
-  Xmax: 10
+    maxY: -36
+  - minY: -10
+    maxY: -36
+  Xmax: 40
