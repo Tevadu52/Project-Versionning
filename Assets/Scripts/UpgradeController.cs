@@ -9,6 +9,7 @@ public class UpgradeController : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject gameplayPanel;
     [SerializeField] private GameObject upgradePanel;
+    [SerializeField] private GameObject startPanel;
     [Header("Textes")]
     [SerializeField] private TMP_Text FishCounter;
     [SerializeField] private TMP_Text nameFish;
@@ -33,7 +34,6 @@ public class UpgradeController : MonoBehaviour
 
     private void Start()
     {
-        amountOfMoney = 0;
         SetGameplay(false);
         InitiateButtons();
         DisplayMoney();
@@ -109,12 +109,12 @@ public class UpgradeController : MonoBehaviour
         FishCounter.text = amountOfFish + " poissons pêchés";
     }
 
-    public void StartGame(GameObject canvas)
+    public void StartGame()
     {
-
+        amountOfMoney = 0;
         PoissonsManager.Instance.SpawnPoissons();
         StartCoroutine(WaitAndDisplay());
-        canvas.SetActive(false);
+        startPanel.SetActive(false);
         upgradePanel.SetActive(false);
         gameplayPanel.SetActive(true);
         gamehasStarted = true;
@@ -123,6 +123,15 @@ public class UpgradeController : MonoBehaviour
     private void UpdateTimer()
     {
         timer.text = ((int)totalPlayTime / 60).ToString() + ":" + ((int)totalPlayTime % 60).ToString();
+        if (totalPlayTime <= 0)
+        {
+            startPanel.SetActive(true);
+            upgradePanel.SetActive(false);
+            gameplayPanel.SetActive(false);
+            gamehasStarted = false;
+            SaveData.Instance.SaveScore();
+        }
+
     }
 
     private void DisplayMoney()

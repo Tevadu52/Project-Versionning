@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
 public class SaveData : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class SaveData : MonoBehaviour
     public GameData gameData = new GameData();
 
     [SerializeField]
+    private TMP_Text[] nameText, fishHuntedText, moneyText;
+
+    [SerializeField]
     private UpgradeController upgradeController;
 
     private string playerName;
     private int numberOfFish;
-    public int NumberOfFishAdd { set { numberOfFish++; } }
+    public int NumberOfFishAdd { set { numberOfFish += value; } }
 
     public void Awake()
     {
@@ -34,15 +38,14 @@ public class SaveData : MonoBehaviour
 
     public void SaveScore()
     {
-        ScoreUser scoreUser = new ScoreUser();
-        scoreUser.name = playerName;
-        scoreUser.score = upgradeController.AmountOfMoney;
-        scoreUser.fishHunted = numberOfFish;
-        gameData.scores.Add(scoreUser);
+        gameData.scores.Add(new ScoreUser(playerName, numberOfFish, upgradeController.AmountOfMoney));
 
         string save = JsonUtility.ToJson(gameData);
         string _filePath = Application.persistentDataPath + "/Save.json";
         System.IO.File.WriteAllText(_filePath, save);
+
+        numberOfFish = 0;
+        LoadScore();
     }
 
     public void LoadScore()
@@ -51,7 +54,34 @@ public class SaveData : MonoBehaviour
         string save = System.IO.File.ReadAllText(_filePath);
 
         gameData = JsonUtility.FromJson<GameData>(save);
+        gameData.scores = gameData.scores.OrderBy(f => f.score).ToList();
+        gameData.scores.Reverse();
 
+        for (int i = 0; i < 5; i++)
+        {
+            if(i >= gameData.scores.Count)
+            {
+                nameText[i].gameObject.SetActive(false);
+                fishHuntedText[i].gameObject.SetActive(false);
+                moneyText[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                nameText[i].gameObject.SetActive(true);
+                if(gameData.scores[i].name == "")
+                {
+                    nameText[i].text = "Inconnue";
+                }
+                else
+                {
+                    nameText[i].text = gameData.scores[i].name;
+                }
+                fishHuntedText[i].gameObject.SetActive(true);
+                fishHuntedText[i].text = gameData.scores[i].fishHunted.ToString();
+                moneyText[i].gameObject.SetActive(true);
+                moneyText[i].text = gameData.scores[i].money.ToString();
+            }
+        }
     }
 
     public void setPlayerName(string name)
@@ -67,9 +97,18 @@ public class GameData
 }
 
 [System.Serializable]
-public class ScoreUser
+public struct ScoreUser
 {
     public string name;
-    public int score;
     public int fishHunted;
+    public int money;
+    public int score;
+
+    public ScoreUser(string Name, int FishHunted,int Money)
+    {
+        name = Name;
+        fishHunted = FishHunted;
+        money = Money;
+        score = Money + FishHunted;
+    }
 }

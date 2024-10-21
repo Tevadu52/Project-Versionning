@@ -42,6 +42,7 @@ public class Hook : MonoBehaviour
                 asPoisson = null;
                 Bait = 0;
                 upgradeController.IncrementCounter();
+                SaveData.Instance.NumberOfFishAdd = 1;
             }
             upgradeController.SetGameplay(true);
         }
