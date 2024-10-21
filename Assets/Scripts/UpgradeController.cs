@@ -13,6 +13,8 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private TMP_Text FishCounter;
     [SerializeField] private TMP_Text nameFish;
     [SerializeField] private TMP_Text moneyDisplayer;
+    [SerializeField] private TMP_Text timer;
+
     [SerializeField] private List<Button> buttons;
     [Header("Hook")]
     [SerializeField] private Hook hook;
@@ -22,9 +24,12 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private int thirdPrice;
     [Header("Variables")]
     [SerializeField] private int timeToWait;
+    [SerializeField, Range(60f, 1200f)] private float totalPlayTime;
 
-    private int amountOfMoney;
+    public int AmountOfMoney {get {return  amountOfMoney; } }
+    private int amountOfMoney ;
     private int amountOfFish;
+    private bool gamehasStarted;
 
     private void Start()
     {
@@ -34,9 +39,19 @@ public class UpgradeController : MonoBehaviour
         DisplayMoney();
         updateButtons();
     }
+
+    private void Update()
+    {
+        if (gamehasStarted)
+        {
+            UpdateTimer();
+        }
+        totalPlayTime -= Time.deltaTime;
+    }
+
     public void SellAll()
     {
-        amountOfMoney = Mathf.Min(amountOfMoney + PoissonsStock.Instance.PoissonsPrice, 999);
+        amountOfMoney = Mathf.Min(amountOfMoney + PoissonsStock.Instance.PoissonsPrice, 9999);
         PoissonsStock.Instance.PoissonsClear();
         DisplayMoney();
         amountOfFish = 0;
@@ -95,11 +110,18 @@ public class UpgradeController : MonoBehaviour
 
     public void StartGame(GameObject canvas)
     {
+
         PoissonsManager.Instance.SpawnPoissons();
         StartCoroutine(WaitAndDisplay());
         canvas.SetActive(false);
         upgradePanel.SetActive(false);
         gameplayPanel.SetActive(true);
+        gamehasStarted = true;
+    }
+
+    private void UpdateTimer()
+    {
+        timer.text = ((int)totalPlayTime / 60).ToString() + ":" + ((int)totalPlayTime % 60).ToString();
     }
 
     private void DisplayMoney()
