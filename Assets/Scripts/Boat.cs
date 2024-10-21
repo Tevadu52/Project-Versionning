@@ -7,6 +7,8 @@ public class Boat : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
     private float _movementVector;
+    public float MoveVector { get { return _movementVector; } }
+    public float MoveSpeed { get { return moveSpeed; } }
 
     private Rigidbody2D rb;
 

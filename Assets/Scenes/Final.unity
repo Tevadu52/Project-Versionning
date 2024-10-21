@@ -445,6 +445,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1721533105441285587, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.410034
+      objectReference: {fileID: 0}
     - target: {fileID: 1931670284525898053, guid: 47473a62f92f2b5478a1d98a4c3b3e7a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -581,10 +585,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 216802302471883238, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1436095542287303019, guid: ba08daa021467f5419298f011a33a6bf, type: 3}
       propertyPath: upgradeController
       value: 
@@ -852,6 +852,14 @@ PrefabInstance:
     - target: {fileID: 7440675979126732753, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
       propertyPath: m_Name
       value: PoissonManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[2].Name
+      value: Dory
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843580601081957248, guid: fc0df5c19685fea4eacb86d6cb65d52c, type: 3}
+      propertyPath: Poissons.Array.data[12].Description
+      value: "Le ton est donn\xE9!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
